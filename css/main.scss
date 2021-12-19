@@ -83,6 +83,10 @@ a {
 		}
 	}
 
+	&__link {
+		font-weight: bold;
+	}
+
 	&__image {
 		width: 100%;
 		height: auto;
@@ -325,6 +329,42 @@ a {
 	}
 }
 
+.c-group li {
+	font-size: 1.125em;
+	margin-bottom: 5px;
+}
+
+.link-to-form {
+	height: 12em;
+	background-color: #006bd6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	margin: 0 1em;
+	h2 {
+		padding: 0 1em;
+		font-size: 1.5em;
+		text-align: center;
+		span {
+			border-color: rgba($color: #ffffff, $alpha: 0);
+			-webkit-transition: border-color 0.4s linear; /* Saf3.2+, Chrome */
+			-moz-transition: border-color 0.4s linear; /* FF3.7+ */
+			-o-transition: border-color 0.4s linear; /* Opera 10.5 */
+			transition: border-color 0.4s linear;
+		}
+	}
+	&:hover {
+		span {
+			padding-bottom: 2px;
+			border-bottom: 2px solid rgba($color: #ffffff, $alpha: 1);
+		}
+		-webkit-box-shadow: 0px 0px 20px -1px rgba(68, 68, 68, 0.7);
+		-moz-box-shadow: 0px 0px 20px -1px rgba(68, 68, 68, 0.7);
+		box-shadow: 0px 0px 20px -1px rgba(68, 68, 68, 0.7);
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.hero__nav {
 		text-align: end;
@@ -347,6 +387,12 @@ a {
 		}
 		li {
 			font-size: 1.125em;
+		}
+	}
+	.link-to-form {
+		height: 20em;
+		h2 {
+			font-size: 2em;
 		}
 	}
 }
