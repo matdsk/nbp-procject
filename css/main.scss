@@ -88,7 +88,7 @@ a {
 	}
 
 	&__image {
-		width: 100%;
+		width: 80%;
 		height: auto;
 	}
 
@@ -202,6 +202,10 @@ a {
 	li {
 		font-size: 1em;
 	}
+}
+
+.white-link {
+	color: white;
 }
 
 .picture-column {
@@ -368,6 +372,10 @@ a {
 @media only screen and (min-width: 768px) {
 	.hero__nav {
 		text-align: end;
+	}
+	.hero__image {
+		width: auto;
+		height: 650px;
 	}
 	.tiles-section__tile {
 		margin: 0;
