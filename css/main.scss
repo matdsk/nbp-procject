@@ -404,3 +404,23 @@ a {
 		}
 	}
 }
+
+.promo-image,
+.promo-video {
+	width: 100%;
+	height: 360px;
+}
+
+@media only screen and (min-width: 1200px) {
+	.promo-image,
+	.promo-video {
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.promo-image,
+	.promo-video {
+		height: 450px;
+	}
+}
